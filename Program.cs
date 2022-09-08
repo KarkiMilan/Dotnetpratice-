@@ -6,10 +6,16 @@ Console.WriteLine("Enter Your Second Number");
 number2 = int.Parse(Console.ReadLine());
 result = 0;
 Console.WriteLine("1 For Addition");
+Console.WriteLine("2 For Substraction");
 action = int.Parse(Console.ReadLine());
 int Addition(int number1, int number2)
 {
     int result = number1 + number2;
+    return result;
+}
+int Substraction(int number1, int number2)
+{
+    int result = number1 - number2;
     return result;
 }
 switch (action)
@@ -17,6 +23,11 @@ switch (action)
     case 1:
         {
             result = Addition(number1, number2);
+            break;
+        }
+    case 2:
+        {
+            result = Substraction(number1, number2);
             break;
         }
     
